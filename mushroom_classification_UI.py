@@ -28,7 +28,7 @@ population = st.selectbox('Population', ['abundant','clustered','numerous','scat
 
 
 bruiseDic = {'True': 't','False': 'f'}
-odorDic = {'almond': 'a', 'anise': 'l', 'creosote': 'c' , 'fishy': 'y', 'foul': 'f', 'musty': 'm', 'none': 'n', 'pungent': 'p', 'spicy': 's'}
+odorDic = {'almond': 'a', 'anise': 'l', 'creoscote': 'c' , 'fishy': 'y', 'foul': 'f', 'musty': 'm', 'none': 'n', 'pungent': 'p', 'spicy': 's'}
 gillSizeDic = {'Broad': 'b','Narrow': 'n'}
 gillColorDic = { 'Black':'k', 'Brown':'n' , 'Buff':'b' , 'Chocolate':'h' , 'Gray':'g' , 'Green':'r' , 'Orange':'o', 'Pink':'p', 'Purple' : 'u', 'Red':'e', 'White':'w', 'Yellow' : 'y' }
 stalkShapeDic = {'Enlarging': 'e','Tapering': 't'}
@@ -73,10 +73,10 @@ if ((clicked)):
         # st.write(encodedDf)
         
         featureArr = encodedDf.to_numpy()
-        print(featureArr)
+        # print(featureArr)
         
         prediction = model.predict(featureArr)
-        print(prediction)
+        # print(prediction)
         
         if(prediction[0]==0):
             st.write("This mushroom is edible")
