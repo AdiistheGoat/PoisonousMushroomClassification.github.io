@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushroom Classification - Step {{ step }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/main.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="form-container">
+        <h2>Step {{ step }}: Choose {{ step_name }}</h2>
+        <form action="{{ url_for('step', step=step) }}" method="post">
+            <div class="options">
+                {% for option, image in options %}
+                <label>
+                    <input type="radio" name="{{ step_name }}" value="{{ option }}" required>
+                    <img src="{{ url_for('static', filename='images/' + image) }}" alt="{{ option }}">
+                    <span>{{ option }}</span>
+                </label>
+                {% endfor %}
+            </div>
+            <button type="submit">{{ 'Next' if not is_last_step else 'Submit' }}</button>
+        </form>
+    </div>
+    <div class="choices-container">
+        <h3>Your Choices</h3>
+        <ul>
+            {% for key, value in choices.items() %}
+            <li>{{ key }} => {{ value if value else 'Not chosen yet' }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+</body>
+</html>

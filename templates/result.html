@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/main.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Prediction Result</h1>
+    <p>{{ prediction }}</p>
+    <h3>Your Choices:</h3>
+    <ul>
+        <li>Bruises: {{ data['bruise'] }}</li>
+        <li>Odor: {{ data['odor'] }}</li>
+        <li>Gill Size: {{ data['gillSize'] }}</li>
+        <li>Gill Color: {{ data['gillColor'] }}</li>
+        <li>Stalk Shape: {{ data['stalkShape'] }}</li>
+        <li>Spore Print Color: {{ data['sporeColor'] }}</li>
+        <li>Population: {{ data['population'] }}</li>
+    </ul>
+    <a href="{{ url_for('index') }}">Start Over</a>
+</div>
+</body>
+</html>
