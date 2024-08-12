@@ -32,7 +32,7 @@ PoisonousMushroomClassification/
 ├── static/
 │   ├── style/
 │   │   └── main.css      # Custom CSS for styling
-│   ├── images/           # Optional images for visual representation
+│   ├── images/           # Optional images for visual representation (Future Implementation)
 │
 ├── mushroom_classification_UI.py  # Main Flask application
 ├── finalModel.pkl       # Trained machine learning model
@@ -61,4 +61,4 @@ pip install flask pandas scikit-learn
 
 ### Developed By
 
-This project was developed by **Aditya Goyal** and co-developed by **Sanyam Garg**.
+This project was developed by [**Aditya Goyal**](https://github.com/AdiistheGoat) and co-developed by [**Sanyam Garg**](https://github.com/Sanyam-G).
