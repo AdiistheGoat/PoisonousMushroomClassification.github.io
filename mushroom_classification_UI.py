@@ -34,11 +34,9 @@ def index():
         sporeColor = request.form['sporeColor']
         population = request.form['population']
 
-        # Check if all values are provided
         if None in [bruise, odor, gillSize, gillColor, stalkShape, sporeColor, population]:
             return render_template('index.html', error="Please provide values for all parameters.")
 
-        # Create the DataFrame
         labelledDf1 = pd.DataFrame(data={
             'bruises': bruise,
             'odor': odor,
@@ -49,18 +47,15 @@ def index():
             'population': population
         }, index=[0])
 
-        # Replace with encoded values
         j = 0
         for i in labelledDf1.columns:
             labelledDf1[i].replace(to_replace=replaceDic[j].keys(), value=replaceDic[j].values(), inplace=True)
             j += 1
 
-        # Encode the DataFrame
         encodedDf = pd.DataFrame({})
         for i in labelledDf1.columns:
             encodedDf[i] = labelEncoders[i].transform(labelledDf1[i])
 
-        # Predict using the model
         featureArr = encodedDf.to_numpy()
         prediction = model.predict(featureArr)
 

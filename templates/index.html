@@ -13,84 +13,224 @@
     <p class="error">{{ error }}</p>
     {% endif %}
     <form action="/" method="post">
-        <label for="bruise">Bruises:</label>
-        <select name="bruise" id="bruise" required>
-            <option value="" disabled selected>Choose type of bruise</option>
-            <option value="True">True</option>
-            <option value="False">False</option>
-        </select>
+        <!-- Bruises -->
+        <div class="selection-group">
+            <h2>Bruises:</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="bruise" value="True" required>
+                    <span class="option-label">True</span>
+                </label>
+                <label>
+                    <input type="radio" name="bruise" value="False" required>
+                    <span class="option-label">False</span>
+                </label>
+            </div>
+        </div>
 
-        <label for="odor">Odor:</label>
-        <select name="odor" id="odor" required>
-            <option value="" disabled selected>Choose the odor</option>
-            <option value="almond">almond</option>
-            <option value="anise">anise</option>
-            <option value="creosote">creosote</option>
-            <option value="fishy">fishy</option>
-            <option value="foul">foul</option>
-            <option value="musty">musty</option>
-            <option value="pungent">pungent</option>
-            <option value="spicy">spicy</option>
-            <option value="none">none</option>
-        </select>
+        <!-- Odor -->
+        <div class="selection-group">
+            <h2>Odor:</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="odor" value="almond" required>
+                    <span class="option-label">Almond</span>
+                </label>
+                <label>
+                    <input type="radio" name="odor" value="anise" required>
+                    <span class="option-label">Anise</span>
+                </label>
+                <label>
+                    <input type="radio" name="odor" value="creosote" required>
+                    <span class="option-label">Creosote</span>
+                </label>
+                <label>
+                    <input type="radio" name="odor" value="fishy" required>
+                    <span class="option-label">Fishy</span>
+                </label>
+                <label>
+                    <input type="radio" name="odor" value="foul" required>
+                    <span class="option-label">Foul</span>
+                </label>
+                <label>
+                    <input type="radio" name="odor" value="musty" required>
+                    <span class="option-label">Musty</span>
+                </label>
+                <label>
+                    <input type="radio" name="odor" value="pungent" required>
+                    <span class="option-label">Pungent</span>
+                </label>
+                <label>
+                    <input type="radio" name="odor" value="spicy" required>
+                    <span class="option-label">Spicy</span>
+                </label>
+                <label>
+                    <input type="radio" name="odor" value="none" required>
+                    <span class="option-label">None</span>
+                </label>
+            </div>
+        </div>
 
-        <label for="gillSize">Gill Size:</label>
-        <select name="gillSize" id="gillSize" required>
-            <option value="" disabled selected>Choose the size</option>
-            <option value="Broad">Broad</option>
-            <option value="Narrow">Narrow</option>
-        </select>
+        <!-- Gill Size -->
+        <div class="selection-group">
+            <h2>Gill Size:</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="gillSize" value="Broad" required>
+                    <span class="option-label">Broad</span>
+                </label>
+                <label>
+                    <input type="radio" name="gillSize" value="Narrow" required>
+                    <span class="option-label">Narrow</span>
+                </label>
+            </div>
+        </div>
 
-        <label for="gillColor">Gill Color:</label>
-        <select name="gillColor" id="gillColor" required>
-            <option value="" disabled selected>Choose the color</option>
-            <option value="Black">Black</option>
-            <option value="Brown">Brown</option>
-            <option value="Buff">Buff</option>
-            <option value="Chocolate">Chocolate</option>
-            <option value="Gray">Gray</option>
-            <option value="Green">Green</option>
-            <option value="Orange">Orange</option>
-            <option value="Pink">Pink</option>
-            <option value="Purple">Purple</option>
-            <option value="Red">Red</option>
-            <option value="White">White</option>
-            <option value="Yellow">Yellow</option>
-        </select>
+        <!-- Gill Color -->
+        <div class="selection-group">
+            <h2>Gill Color:</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="gillColor" value="Black" required>
+                    <span class="option-label">Black</span>
+                </label>
+                <label>
+                    <input type="radio" name="gillColor" value="Brown" required>
+                    <span class="option-label">Brown</span>
+                </label>
+                <label>
+                    <input type="radio" name="gillColor" value="Buff" required>
+                    <span class="option-label">Buff</span>
+                </label>
+                <label>
+                    <input type="radio" name="gillColor" value="Chocolate" required>
+                    <span class="option-label">Chocolate</span>
+                </label>
+                <label>
+                    <input type="radio" name="gillColor" value="Gray" required>
+                    <span class="option-label">Gray</span>
+                </label>
+                <label>
+                    <input type="radio" name="gillColor" value="Green" required>
+                    <span class="option-label">Green</span>
+                </label>
+                <label>
+                    <input type="radio" name="gillColor" value="Orange" required>
+                    <span class="option-label">Orange</span>
+                </label>
+                <label>
+                    <input type="radio" name="gillColor" value="Pink" required>
+                    <span class="option-label">Pink</span>
+                </label>
+                <label>
+                    <input type="radio" name="gillColor" value="Purple" required>
+                    <span class="option-label">Purple</span>
+                </label>
+                <label>
+                    <input type="radio" name="gillColor" value="Red" required>
+                    <span class="option-label">Red</span>
+                </label>
+                <label>
+                    <input type="radio" name="gillColor" value="White" required>
+                    <span class="option-label">White</span>
+                </label>
+                <label>
+                    <input type="radio" name="gillColor" value="Yellow" required>
+                    <span class="option-label">Yellow</span>
+                </label>
+            </div>
+        </div>
 
-        <label for="stalkShape">Stalk Shape:</label>
-        <select name="stalkShape" id="stalkShape" required>
-            <option value="" disabled selected>Choose the shape</option>
-            <option value="Enlarging">Enlarging</option>
-            <option value="Tapering">Tapering</option>
-        </select>
+        <!-- Stalk Shape -->
+        <div class="selection-group">
+            <h2>Stalk Shape:</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="stalkShape" value="Enlarging" required>
+                    <span class="option-label">Enlarging</span>
+                </label>
+                <label>
+                    <input type="radio" name="stalkShape" value="Tapering" required>
+                    <span class="option-label">Tapering</span>
+                </label>
+            </div>
+        </div>
 
-        <label for="sporeColor">Spore Print Color:</label>
-        <select name="sporeColor" id="sporeColor" required>
-            <option value="" disabled selected>Choose the spore color</option>
-            <option value="Black">Black</option>
-            <option value="Brown">Brown</option>
-            <option value="Buff">Buff</option>
-            <option value="Chocolate">Chocolate</option>
-            <option value="Green">Green</option>
-            <option value="Orange">Orange</option>
-            <option value="Purple">Purple</option>
-            <option value="White">White</option>
-            <option value="Yellow">Yellow</option>
-        </select>
+        <!-- Spore Print Color -->
+        <div class="selection-group">
+            <h2>Spore Print Color:</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="sporeColor" value="Black" required>
+                    <span class="option-label">Black</span>
+                </label>
+                <label>
+                    <input type="radio" name="sporeColor" value="Brown" required>
+                    <span class="option-label">Brown</span>
+                </label>
+                <label>
+                    <input type="radio" name="sporeColor" value="Buff" required>
+                    <span class="option-label">Buff</span>
+                </label>
+                <label>
+                    <input type="radio" name="sporeColor" value="Chocolate" required>
+                    <span class="option-label">Chocolate</span>
+                </label>
+                <label>
+                    <input type="radio" name="sporeColor" value="Green" required>
+                    <span class="option-label">Green</span>
+                </label>
+                <label>
+                    <input type="radio" name="sporeColor" value="Orange" required>
+                    <span class="option-label">Orange</span>
+                </label>
+                <label>
+                    <input type="radio" name="sporeColor" value="Purple" required>
+                    <span class="option-label">Purple</span>
+                </label>
+                <label>
+                    <input type="radio" name="sporeColor" value="White" required>
+                    <span class="option-label">White</span>
+                </label>
+                <label>
+                    <input type="radio" name="sporeColor" value="Yellow" required>
+                    <span class="option-label">Yellow</span>
+                </label>
+            </div>
+        </div>
 
-        <label for="population">Population:</label>
-        <select name="population" id="population" required>
-            <option value="" disabled selected>Choose the population distribution</option>
-            <option value="abundant">abundant</option>
-            <option value="clustered">clustered</option>
-            <option value="numerous">numerous</option>
-            <option value="scattered">scattered</option>
-            <option value="several">several</option>
-            <option value="solitary">solitary</option>
-        </select>
+        <!-- Population -->
+        <div class="selection-group">
+            <h2>Population:</h2>
+            <div class="options">
+                <label>
+                    <input type="radio" name="population" value="abundant" required>
+                    <span class="option-label">Abundant</span>
+                </label>
+                <label>
+                    <input type="radio" name="population" value="clustered" required>
+                    <span class="option-label">Clustered</span>
+                </label>
+                <label>
+                    <input type="radio" name="population" value="numerous" required>
+                    <span class="option-label">Numerous</span>
+                </label>
+                <label>
+                    <input type="radio" name="population" value="scattered" required>
+                    <span class="option-label">Scattered</span>
+                </label>
+                <label>
+                    <input type="radio" name="population" value="several" required>
+                    <span class="option-label">Several</span>
+                </label>
+                <label>
+                    <input type="radio" name="population" value="solitary" required>
+                    <span class="option-label">Solitary</span>
+                </label>
+            </div>
+        </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" class="submit-button">Submit</button>
     </form>
 </div>
 </body>
