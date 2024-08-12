@@ -37,6 +37,7 @@ PoisonousMushroomClassification/
 ├── mushroom_classification_UI.py  # Main Flask application
 ├── finalModel.pkl       # Trained machine learning model
 ├── ecoders.pkl          # Encoders for categorical features
+├── MushroomClassifier.ipynb   # Notebook outlining the model training process
 └── README.md            # Project documentation
 ```
 
