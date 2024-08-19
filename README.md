@@ -62,4 +62,4 @@ pip install flask pandas scikit-learn
 
 ### Developed By
 
-This project was developed by [**Aditya Goyal**](https://github.com/AdiistheGoat) and co-developed by [**Sanyam Garg**](https://github.com/Sanyam-G).
+This project was developed by [**Aditya Goyal**](https://github.com/AdiistheGoat) and [**Sanyam Garg**](https://github.com/Sanyam-G).
