@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prediction Result</title>
+    <title>Classification Result</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style/main.css') }}">
 </head>
 <body>
 <div class="container">
     <h1>Prediction Result</h1>
-    <p>{{ prediction }}</p>
-    <h3>Your Choices:</h3>
-    <ul>
-        <li>Bruises: {{ data['bruise'] }}</li>
-        <li>Odor: {{ data['odor'] }}</li>
-        <li>Gill Size: {{ data['gillSize'] }}</li>
-        <li>Gill Color: {{ data['gillColor'] }}</li>
-        <li>Stalk Shape: {{ data['stalkShape'] }}</li>
-        <li>Spore Print Color: {{ data['sporeColor'] }}</li>
-        <li>Population: {{ data['population'] }}</li>
-    </ul>
-    <a href="{{ url_for('index') }}">Start Over</a>
+    <div class="result-box">
+        <h2 style="color: white">{{ prediction }}</h2>
+    </div>
+    <div class="choices-container">
+        <h3>Your Selections:</h3>
+        <ul class="choices-list">
+            <li>Bruises: {{ data['bruise'] }}</li>
+            <li>Odor: {{ data['odor'] }}</li>
+            <li>Gill Size: {{ data['gillSize'] }}</li>
+            <li>Gill Color: {{ data['gillColor'] }}</li>
+            <li>Stalk Shape: {{ data['stalkShape'] }}</li>
+            <li>Spore Print Color: {{ data['sporeColor'] }}</li>
+            <li>Population: {{ data['population'] }}</li>
+        </ul>
+    </div>
+    <a href="{{ url_for('index') }}" class="submit-button">Start Over</a>
 </div>
 </body>
 </html>
